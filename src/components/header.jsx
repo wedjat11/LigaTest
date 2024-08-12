@@ -23,8 +23,8 @@ function MyComponent() {
                             <Image
                                 src={league.image_path}
                                 alt={league.name}
-                                width={30} // Ajusta el tamaño según lo necesites
-                                height={30} // Ajusta el tamaño según lo necesites
+                                width={70} // Ajusta el tamaño según lo necesites
+                                height={70} // Ajusta el tamaño según lo necesites
                                 className="object-cover"
                             />
                         </div>
