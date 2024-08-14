@@ -2,17 +2,29 @@
 import React from "react";
 import TeamList from "./componentsHeader/teamlist";
 import { FirstLeftNavBar } from "./componentsHeader/firstLeftNavBar";
-import { RightNavBar } from "./componentsHeader/rightNavBar";
+import LogoHeader from "./componentsHeader/logoHeader";
+import { FirstRightNavBar } from "./componentsHeader/firstRightNavBar";
+
 
 function HeaderLiga() {
     return (
         <>
         <TeamList/>
-        <div className="grid grid-cols-3 gap-4">
-            <FirstLeftNavBar/>
-            <RightNavBar/>
+        <div id="container-header" className="grid grid-cols-11  w-full">
+            <div className="col-span-5 border-solid border border-grayBorder" id="leftSide">
+                <div >
+                    <FirstLeftNavBar/>    
+                </div>
+            </div>
+            <div >
+                <LogoHeader/>
+            </div>
+            <div className='col-span-5 border-solid border border-grayBorder' id="rightSide">
+                <div >
+                    <FirstRightNavBar/>    
+                </div>
+            </div>
         </div>
-        
         </>
         
     );

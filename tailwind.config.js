@@ -9,7 +9,8 @@ module.exports = {
     colors:{
       superGray: '#F2F2F2',
       orange: '#FF4B43',
-      black: '#030712'
+      black: '#030712',
+      grayBorder: '#EAEAEA'
     },
     extend: {
       backgroundImage: {
