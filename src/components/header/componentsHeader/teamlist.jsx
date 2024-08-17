@@ -4,12 +4,11 @@ import React from "react";
 
 function TeamList() {
     const { data, loading, error } = useFetchImg();
+    console.log(data)
 
     if (loading) return <div>Loading...</div>;
-    // if (error) return <div>Error: {error.message}</div>;
+    if (error) return <div>Error: {error.message}</div>;
 
-    console.log('Fetched Data:', data);
-    console.log("testing");
 
     return (
         <div className="p-2">

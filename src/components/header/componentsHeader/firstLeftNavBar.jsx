@@ -12,9 +12,11 @@ export function FirstLeftNavBar(){
             </div>
             <div className='w-full'>
                 <ul className='flex flex-row justify-between p-3 '>
-                    <li className='list-none'>test1</li>
-                    <li className='list-none'>test2</li>
-                    <li className='list-none'>test3</li>
+                    <li className='list-none'>MI LIGA 1</li>
+                    <li className='list-none'>MI LIGA 2</li>
+                    <li className='list-none'>MI LIGA femenil</li>
+                    <li className='list-none'>MI LIGA 3</li>
+
                 </ul>
             </div>
         </>

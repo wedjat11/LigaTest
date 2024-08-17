@@ -23,7 +23,7 @@ function HeaderLiga() {
                 <div >
                     <FirstRightNavBar/>    
                 </div>
-            </div>
+            </div>   
         </div>
         </>
         

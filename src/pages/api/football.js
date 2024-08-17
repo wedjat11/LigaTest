@@ -1,4 +1,4 @@
-// /pages/api/football.js
+
 let KEY = process.env.SPORTMONKS_API_KEY
 
 console.log('Token:', KEY);
