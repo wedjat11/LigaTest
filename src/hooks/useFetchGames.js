@@ -28,15 +28,13 @@ export function useFetchGames(leagueId, seasonId, fromDate, toDate) {
             }
         };
 
-        if (leagueId && seasonId && fromDate && toDate) {
-            fetchData();
-        }
+        fetchData();
 
         return () => {
             isMounted = false; // Evita actualizaciones si el componente se desmonta
             controller.abort(); // Cancela la solicitud si el componente se desmonta
         };
-    }, []);
+    }, [fromDate, leagueId, seasonId, toDate]);
 
     return { data, loading, error };
 }

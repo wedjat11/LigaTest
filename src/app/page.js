@@ -1,3 +1,4 @@
+import Carousel from "@/components/carousel/Carousel";
 import { NavBarPage } from "./home/components/navBarPage";
 import { HomeView } from "./home/homeView";
 
@@ -10,6 +11,7 @@ export default function Home() {
       </div>
       <NavBarPage/>
       <HomeView/>
+      <Carousel/>
     </>
     
   );

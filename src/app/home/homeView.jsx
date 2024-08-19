@@ -1,12 +1,9 @@
 'use client'
 import React from 'react'
 import { ButtonGroup } from './components/buttonGroup'
-import { BasicCard } from '@/components/cards/basicCard';
-import { useFetchGames } from '@/hooks/useFetchGames';
+import { GroupGames } from './components/groupGames';
 
 export function HomeView (){
-  const{ data, loading, error }= useFetchGames();
-  console.log(data)
     function handleClick(title) {
         console.log(`Botón apretado: ${title}`);
       }
@@ -24,22 +21,7 @@ export function HomeView (){
         </div>
       </div>
       <div className='flex justify-items-center justify-between pt-5 px-20'>
-        <BasicCard
-        date={'JUEVES 16.08.24'}
-        local={'ame'}
-        visitante={'tol'}/>
-        <BasicCard
-        date={'JUEVES 16.08.24'}
-        local={'ame'}
-        visitante={'tol'}/>
-        <BasicCard
-        date={'JUEVES 16.08.24'}
-        local={'ame'}
-        visitante={'tol'}/>
-        <BasicCard
-        date={'JUEVES 16.08.24'}
-        local={'ame'}
-        visitante={'tol'}/>
+       <GroupGames/>
       </div>
       
       </>

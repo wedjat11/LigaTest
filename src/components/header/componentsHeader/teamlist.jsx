@@ -1,10 +1,11 @@
+import { BasicLoader } from "@/components/loader/basicLoader";
 import { useFetchImg } from "@/hooks/useFetchImg";
 import Image from "next/image";
 import React from "react";
 
 function TeamList() {
     const { data, loading, error } = useFetchImg();
-    console.log(data)
+
 
     if (loading) return <div>Loading...</div>;
     if (error) return <div>Error: {error.message}</div>;
@@ -26,7 +27,7 @@ function TeamList() {
                         </div>
                     ))
                 ) : (
-                    <div>No data available</div>
+                    <BasicLoader/>
                 )}
             </div>
         </div>
